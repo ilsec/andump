@@ -11,7 +11,7 @@
 void hexdump(void *mem, unsigned len, unsigned mod){
   int x = 0, y = 0, line_count = 0;
   char line[1024];
-  char ch[4] = {0};
+  char ch[16] = {0};
 
   line_count = len / mod;
   line_count = len % mod ? line_count + 1 : line_count;
